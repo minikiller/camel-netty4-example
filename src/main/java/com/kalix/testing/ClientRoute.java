@@ -15,16 +15,21 @@ public class ClientRoute extends RouteBuilder {
     public void configure() throws Exception {
         restConfiguration()
                 .component("restlet")
-                .host("localhost").port("8081").enableCORS(true).bindingMode(RestBindingMode.auto);
+                .host("localhost").port("8081")
+                .enableCORS(true).bindingMode(RestBindingMode.json);
         // Endpoints will be defined here
-        rest("/customers?country={country}")
-                .get().
-                route().setBody(simple("${header.country}"))
-                .log("Request:  ${id}:${body}")
-                .to(HOST + "?allowDefaultCodec=false" +
-                        "&encoder=#stringEncoder&decoder=#stringDecoder")
-                .log("Request:  ${id}:${body}")
-                .to("bean:echoService")
+        rest("/customers/")
+                .post()
+                .produces("application/json")
+                .type(Message.class)
+                .consumes("application/json")
+                .outType(Message.class)
+//                route().setBody(simple("${header.country}"))
+//                .log("Request:  ${id}:${body}")
+//                .to(HOST + "?allowDefaultCodec=false" +
+//                        "&encoder=#stringEncoder&decoder=#stringDecoder")
+//                .log("Request:  ${id}:${body}")
+                .route().to("bean:echoService")
         ;
     }
 }

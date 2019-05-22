@@ -4,8 +4,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EchoService {
-    public String sayHello(String guestName) {
+    public Message sayHello(Message guestName) {
         System.out.println("Input Value : "+ guestName);
-        return "Hello " + guestName;
+        return new Message("fdfd","dfdfdf");
     }
 }

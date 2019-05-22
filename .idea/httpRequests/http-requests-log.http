@@ -1,3 +1,170 @@
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T062411.200.json
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T062231.200.json
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T061950.500.txt
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T061902.500.txt
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T061705.500.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T061616.405.html
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T061148.405.html
+
+###
+
+POST http://localhost:8081/customers?restletMethods=POST,OPTIONS
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T060753.500.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T060651.405.html
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T060508.405.html
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T060306.500.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T060126.405.html
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T055910.500.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T055803.405.html
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T055605.500.txt
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+<> 2019-05-22T055550.500.txt
+
+###
+
+POST http://localhost:8081/customers
+
+{
+"id":"12121",
+"login":"dfdfdf"
+}
+
+<> 2019-05-22T055510.500.txt
+
+###
+
 GET http://localhost:8081/customers?country=12121
 
 <> 2019-05-22T043752.200.txt
@@ -58,3 +225,12 @@ GET http://localhost:8081/customers?country=12121
 
 ###
 
+POST http://localhost:8081/customers?restletMethods=POST,OPTIONS
+Content-Type: application/json
+
+{
+  "id": "12121",
+  "login": "dfdfdf"
+}
+
+###
