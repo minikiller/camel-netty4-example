@@ -3,6 +3,8 @@ package com.kalix.testing;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.spring.Main;
 
+import static com.kalix.testing.Constant.*;
+
 public class ClientRoute extends RouteBuilder {
     public static void main(String[] args) throws Exception {
         new Main().run(args);
@@ -16,12 +18,12 @@ public class ClientRoute extends RouteBuilder {
         // Endpoints will be defined here
         rest("/customers?country={country}")
                 .get().
-        route().setBody(simple("${header.country}"))
+                route().setBody(simple("${header.country}"))
                 .log("Request:  ${id}:${body}")
-                .to("netty4:tcp://192.168.98.53:7000?allowDefaultCodec=false" +
-                "&encoder=#stringEncoder&decoder=#stringDecoder")
+                .to(HOST + "?allowDefaultCodec=false" +
+                        "&encoder=#stringEncoder&decoder=#stringDecoder")
                 .log("Request:  ${id}:${body}")
                 .to("bean:echoService")
-                ;
+        ;
     }
 }
