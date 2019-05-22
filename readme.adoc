@@ -22,3 +22,15 @@ http://=  hello
 ----
 javaaad dfdfd f
 ----
+
+==== 参考资料
+1. https://www.cnblogs.com/hanfight/p/4852496.html
+2. http://shengwangi.blogspot.com/2015/01/camel-netty-hello-world-simple-example.html
+3. https://camel.apache.org/netty4.html
+4. https://tomd.xyz/articles/camel-rest/
+
+==== 实现功能
+1.发布rest服务，通过camel-restlet实现
+2.发布socket server，通过camel-netty4实现
+3.实现rest服务到socket client的调用
+4.实现socket广播
