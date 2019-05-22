@@ -25,10 +25,7 @@ public class BroadCastChannelHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         Channel ch = ctx.channel();
-        if (ChannelGroups.size() > 0) {
-            Message msg = new Message(ch.remoteAddress().toString().substring(1), SDF.format(new Date()));
-            ChannelGroups.broadcast(GSON.toJson(msg), new ChannelMatchers());
-        }
+
         ChannelGroups.add(ch);
     }
 

@@ -17,6 +17,6 @@ public class ServerRoute extends RouteBuilder {
         from(HOST + "?sync=true&allowDefaultCodec=false" +
                 "&encoder=#stringEncoder&decoder=#broadCastChannelHandler")
                 //"&encoder=#stringEncoder&decoder=#stringDecoder")
-                .to("bean:echoService");
+                .to("bean:lockService");
     }
 }

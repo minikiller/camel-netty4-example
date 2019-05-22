@@ -34,3 +34,13 @@ javaaad dfdfd f
 2. 发布socket server，通过camel-netty4实现
 3. 实现rest服务到socket client的调用
 4. 实现socket广播
+
+==== 测试说明
+1. ip地址和端口配置写在constant类里面了；
+2. socket client 链接到服务器地址；
+3. 客户端发送请求 GET http://localhost:8081/customers?country=12121，12121即为锁的id
+3. socket client 显示
+----
+收到数据：12121
+-----
+4. 如果部署在服务器上，发送http://localhost:8081/customers?country=8XXXXXX，应该会开锁。

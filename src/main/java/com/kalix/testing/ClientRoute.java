@@ -1,6 +1,7 @@
 package com.kalix.testing;
 
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.camel.spring.Main;
 
 import static com.kalix.testing.Constant.*;
@@ -14,7 +15,7 @@ public class ClientRoute extends RouteBuilder {
     public void configure() throws Exception {
         restConfiguration()
                 .component("restlet")
-                .host("localhost").port("8081").enableCORS(true);
+                .host("localhost").port("8081").enableCORS(true).bindingMode(RestBindingMode.auto);
         // Endpoints will be defined here
         rest("/customers?country={country}")
                 .get().

@@ -1,0 +1,60 @@
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T043752.200.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T105826.200.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T105612.200.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T105026.200.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T104930.200.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T104805.200.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T104629.200.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+<> 2019-05-22T084331.500.txt
+
+###
+
+GET http://localhost:8081/customers?country=12121
+
+###
+
