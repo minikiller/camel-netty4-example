@@ -1,4 +1,4 @@
-package com.kalix.testing;
+package com.kalix.testing.router;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.spring.Main;

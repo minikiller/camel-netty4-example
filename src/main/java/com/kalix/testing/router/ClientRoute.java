@@ -1,5 +1,6 @@
-package com.kalix.testing;
+package com.kalix.testing.router;
 
+import com.kalix.testing.Message;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.camel.spring.Main;
@@ -16,6 +17,7 @@ public class ClientRoute extends RouteBuilder {
         restConfiguration()
                 .component("restlet")
                 .host("localhost").port("8081")
+                .dataFormatProperty("prettyPrint", "true")
                 .enableCORS(true).bindingMode(RestBindingMode.json);
         // Endpoints will be defined here
         rest("/customers/")
@@ -23,8 +25,9 @@ public class ClientRoute extends RouteBuilder {
                 .produces("application/json")
                 .type(Message.class)
                 .consumes("application/json")
+
                 .outType(Message.class)
-//                route().setBody(simple("${header.country}"))
+//                .route().setBody(constant(new Message()))
 //                .log("Request:  ${id}:${body}")
 //                .to(HOST + "?allowDefaultCodec=false" +
 //                        "&encoder=#stringEncoder&decoder=#stringDecoder")
