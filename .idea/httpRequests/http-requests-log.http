@@ -1,3 +1,87 @@
+POST http://localhost:8082/swagger/customers
+Content-Type: application/json
+
+{
+  "id": "999",
+  "login": "content"
+}
+
+<> 2019-05-27T113216.500.txt
+
+###
+
+POST http://localhost:8082/swagger/customers
+Content-Type: application/json
+
+{
+  "id": "999",
+  "login": "content"
+}
+
+<> 2019-05-27T110514.500.txt
+
+###
+
+POST http://localhost:8082/swagger/customers
+Content-Type: application/json
+
+{
+  "id": "999",
+  "login": "content"
+}
+
+<> 2019-05-27T110446.500.txt
+
+###
+
+POST http://localhost:8082/swagger/customers
+Content-Type: application/json
+
+{
+  "id": "999",
+  "login": "content"
+}
+
+<> 2019-05-27T110423.500.txt
+
+###
+
+POST http://localhost:8082/swagger/customers
+Content-Type: application/json
+
+{
+  "id": "999",
+  "login": "content"
+}
+
+<> 2019-05-27T103908.500.txt
+
+###
+
+POST http://localhost:8082/swagger/customers
+Content-Type: application/json
+
+{
+  "id": "999",
+  "login": "content"
+}
+
+<> 2019-05-27T103808.200.json
+
+###
+
+GET http://localhost:8082/api-doc/swagger.json
+
+<> 2019-05-24T095539.404.html
+
+###
+
+GET http://localhost:8082/api-docs/swagger.json
+
+<> 2019-05-24T095521.404.html
+
+###
+
 POST http://localhost:8081/customers
 Content-Type: application/json
 
